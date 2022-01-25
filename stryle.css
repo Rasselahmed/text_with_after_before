@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p{
+
+	text-align: center;
+	font-size: 40px;
+	width: 250px;
+	margin: auto;
+	margin-top: 150px;
+
+}
+
+p::before{
+	content: "";
+	display: block;
+	width: 0%;
+	height: 5px;
+	background: red;
+	transition: 0.5s;
+	
+}
+
+p::after{
+	content: "";
+	display: block;
+	width: 0%;
+	height: 5px;
+	background: green;
+	transition: 0.5s;
+	
+}
+
+p:hover::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: red;
+}
+
+p:hover::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: green;
+}
